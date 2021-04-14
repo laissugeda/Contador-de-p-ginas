@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var aulas = [] 
+            function contaAulas(){
+                for (i=145; i<=236; i++){
+                    var a = i
+                        aulas.push(a)
+                    var b = aulas.indexOf(i) // var i e o array aulas tem os mesmos valores, 
+                                             //logo indexOf irá retornar todos os indices
+                    var c = (parseInt(b)+1) + ' = ' + a
+                        // document.write(c + '<br>')
+                }
+            return aulas
+            }
+            contaAulas()
+
+            function ordenaAulas(){
+                for (var i in aulas){
+                    document.write((parseInt(i)+1) + ' = ' + aulas[i] + '<br>')
+                }
+            }
+            ordenaAulas()
+    </script>
+</body>
+</html>
